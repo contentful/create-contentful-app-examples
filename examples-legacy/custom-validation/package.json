@@ -1,0 +1,29 @@
+{
+  "name": "custom-validation",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "vite",
+    "build": "tsc --noEmit && vite build",
+    "upload": "contentful-app-scripts upload --bundle-dir ./dist",
+    "upload-ci": "contentful-app-scripts upload --ci --bundle-dir ./dist  --organization-id $CONTENTFUL_ORG_ID --definition-id $CONTENTFUL_APP_DEF_ID --token $CONTENTFUL_ACCESS_TOKEN"
+  },
+  "dependencies": {
+    "@contentful/app-scripts": "1.10.2",
+    "@contentful/app-sdk": "4.22.0",
+    "@contentful/f36-components": "4.45.0",
+    "@contentful/react-apps-toolkit": "1.2.16",
+    "contentful-management": "10.38.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "regenerator-runtime": "0.13.11"
+  },
+  "devDependencies": {
+    "@tsconfig/create-react-app": "2.0.0",
+    "@types/react": "18.2.14",
+    "@types/react-dom": "18.2.6",
+    "@vitejs/plugin-react": "4.0.1",
+    "typescript": "5.1.6",
+    "vite": "4.5.5"
+  },
+  "homepage": "."
+}
