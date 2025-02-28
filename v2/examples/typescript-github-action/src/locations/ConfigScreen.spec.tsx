@@ -1,5 +1,5 @@
 import React from 'react';
-import { describe, it, expect, vi } from 'vitest';
+import { vi } from 'vitest';
 import ConfigScreen from './ConfigScreen';
 import { render } from '@testing-library/react';
 import { mockCma, mockSdk } from '../../test/mocks';
