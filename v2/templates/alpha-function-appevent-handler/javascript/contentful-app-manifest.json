@@ -1,12 +1,12 @@
 {
   "functions": [
     {
-      "id": "example",
+      "id": "appevent-handler",
       "name": "Example App Event Handler Function",
-      "description": "This is an example to help you learn how App Event handler functions work.",
-      "path": "functions/example.js",
-      "entryFile": "functions/example.js",
-      "allowNetworks": ["FakeAuditLogServer.com", "FakeAnalyticsServer.com"],
+      "description": "Template for creating custom app event handlers. Add your own code to respond to Contentful events by sending data to external systems or performing other actions.",
+      "path": "functions/appevent-handler-template.js",
+      "entryFile": "functions/appevent-handler-template.js",
+      "allowNetworks": [],
       "accepts": ["appevent.handler"]
     }
   ]
