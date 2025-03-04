@@ -1,0 +1,28 @@
+{
+  "functions": [
+    {
+      "id": "unified-function",
+      "name": "Unified Function Template",
+      "description": "Template supporting multiple function types: app actions, event handlers, filters, and transformations. Customize by keeping only what you need.",
+      "path": "functions/unified-function-template.js",
+      "entryFile": "functions/unified-function-template.ts",
+      "allowNetworks": [],
+      "accepts": [
+        "appaction.call", 
+        "appevent.handler", 
+        "appevent.filter", 
+        "appevent.transformation"
+      ],
+      "actions": [
+        {
+          "id": "example-action",
+          "name": "Example Action",
+          "type": "function",
+          "function": {
+            "sys": { "id": "unified-function", "type": "Link", "linkType": "Function" }
+          }
+        }
+      ]
+    }
+  ]
+}
